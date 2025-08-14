@@ -7,3 +7,8 @@ export default function Home() {
     </main>
   );
 }
+ 
+export const metadata = {
+  title: 'Home - Chatsy',
+  description: 'Chatsy helps you connect with others',
+}

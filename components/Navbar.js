@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { UserButton } from '@clerk/nextjs';
 
 const Navbar = () => {
   return (
@@ -17,14 +18,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-gray-200">
-              About
+            <Link href="/forums" className="hover:text-gray-200">
+              Forums
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-gray-200">
-              Contact
+            <Link href="/chat" className="hover:text-gray-200">
+              Chat
             </Link>
+          </li>
+          <li>
+            <UserButton />
           </li>
         </ul>
       </div>
