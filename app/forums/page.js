@@ -8,37 +8,37 @@ const topics = [
         text: "Python",
         img: "/python.webp",
         desc: "Discuss about Python programming language",
-        slug: "python-discuss"
+        slug: "python"
     },
     {
         text: "JavaScript",
         img: "/javascript.webp",
         desc: "Explore the fundamentals of JavaScript",
-        slug: "javascript-discuss"
+        slug: "javascript"
     },
     {
         text: "HTML",
         img: "/html.webp",
         desc: "A deep dive into Hypertext Markup Language",
-        slug: "html-discuss"
+        slug: "html"
     },
     {
         text: "CSS",
         img: "/css.webp",
         desc: "Styling web pages with Cascading Style Sheets",
-        slug: "css-discuss"
+        slug: "css"
     },
     {
         text: "React",
         img: "/react.webp",
         desc: "Building user interfaces with the React library",
-        slug: "react-discuss"
+        slug: "react"
     },
     {
         text: "Node.js",
         img: "/nodejs.webp",
         desc: "Server-side programming with Node.js",
-        slug: "nodejs-discuss"
+        slug: "nodejs"
     }
 ];
 
