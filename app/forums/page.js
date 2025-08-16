@@ -1,37 +1,44 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 
 const topics = [
     {
         text: "Python",
         img: "/python.webp",
-        desc: "Discuss about Python programming language"
+        desc: "Discuss about Python programming language",
+        slug: "python-discuss"
     },
     {
         text: "JavaScript",
         img: "/javascript.webp",
-        desc: "Explore the fundamentals of JavaScript"
+        desc: "Explore the fundamentals of JavaScript",
+        slug: "javascript-discuss"
     },
     {
         text: "HTML",
         img: "/html.webp",
-        desc: "A deep dive into Hypertext Markup Language"
+        desc: "A deep dive into Hypertext Markup Language",
+        slug: "html-discuss"
     },
     {
         text: "CSS",
         img: "/css.webp",
-        desc: "Styling web pages with Cascading Style Sheets"
+        desc: "Styling web pages with Cascading Style Sheets",
+        slug: "css-discuss"
     },
     {
         text: "React",
         img: "/react.webp",
-        desc: "Building user interfaces with the React library"
+        desc: "Building user interfaces with the React library",
+        slug: "react-discuss"
     },
     {
         text: "Node.js",
         img: "/nodejs.webp",
-        desc: "Server-side programming with Node.js"
+        desc: "Server-side programming with Node.js",
+        slug: "nodejs-discuss"
     }
 ];
 
@@ -45,9 +52,11 @@ const Forums = () => {
                         <Image alt={topic.desc} src={topic.img} width={74} height={74} className=''/>
                         <h2 className='text-2xl'>{topic.text}</h2>
                         <p className='px-3'>{topic.desc}</p>
+                        <Link href={`/forum/${topic.slug}`}>
                         <Button className='px-4 border border-slate-300 py-2'>
                             Discuss Now
                         </Button>
+                        </Link>
                     </div>
                 })}
             </div>
