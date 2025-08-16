@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { Button } from "@/components/ui/button"
 
 const topics = [
     {
@@ -44,9 +45,9 @@ const Forums = () => {
                         <Image alt={topic.desc} src={topic.img} width={74} height={74} className=''/>
                         <h2 className='text-2xl'>{topic.text}</h2>
                         <p className='px-3'>{topic.desc}</p>
-                        <button className='px-4 border border-slate-300 py-2'>
+                        <Button className='px-4 border border-slate-300 py-2'>
                             Discuss Now
-                        </button>
+                        </Button>
                     </div>
                 })}
             </div>
