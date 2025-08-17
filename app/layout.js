@@ -23,7 +23,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Chatsy • Real‑Time Chat & Forums",
   description: "Chatsy provides real‑time 1:1 chat and discussion forums.",
-  icons: [{ rel: 'icon', url: '/favicon.ico' }]
+  icons: [
+    { rel: 'icon', url: '/favicon.svg', type: 'image/svg+xml' },
+    { rel: 'icon', url: '/favicon.ico' },
+    { rel: 'apple-touch-icon', url: '/apple-touch-icon.png' }
+  ]
 };
 
 export default function RootLayout({ children }) {

@@ -140,7 +140,6 @@ export default function HomePageContent() {
             </Button>
           </div>
         </div>
-  <p className="mt-10 text-center text-[11px] text-muted-foreground">© Shriyans Mukherjee 2025</p>
       </section>
     </main>
   );

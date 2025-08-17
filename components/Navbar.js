@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { UserButton } from '@clerk/nextjs';
+import ThemeToggle from './ThemeToggle';
 // import { useUser } from '@clerk/nextjs';
 
 const Navbar = () => {
@@ -11,10 +12,11 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold">
-          Chatsy
+        <Link href="/" className="flex items-center gap-2 text-xl font-bold">
+          <img src="/favicon.svg" alt="Chatsy" className="h-7 w-7 rounded-md shadow ring-1 ring-white/20 dark:ring-white/10" />
+          <span>Chatsy</span>
         </Link>
-        <ul className="flex space-x-4">
+  <ul className="flex items-center space-x-4">
           <li>
             <Link href="/" className="hover:text-gray-200">
               Home
@@ -35,9 +37,8 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
-          <li>
-            <UserButton />
-          </li>
+          <li><ThemeToggle /></li>
+          <li><UserButton /></li>
         </ul>
       </div>
     </nav>
