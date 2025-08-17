@@ -1,0 +1,20 @@
+:root {
+  --chat-accent: var(--primary);
+}
+
+/* Subtle scrollbar styling */
+.flex-1.overflow-y-auto::-webkit-scrollbar { width: 8px; }
+.flex-1.overflow-y-auto::-webkit-scrollbar-track { background: transparent; }
+.flex-1.overflow-y-auto::-webkit-scrollbar-thumb { background: oklch(0.85 0 0 / .6); border-radius: 20px; }
+.dark .flex-1.overflow-y-auto::-webkit-scrollbar-thumb { background: oklch(0.35 0 0 / .6); }
+
+/* Stream message list tweaks */
+.str-chat__message-list { background: transparent; }
+.str-chat__list { padding-bottom: 3.5rem!important; }
+.str-chat__message-simple__actions__action { color: var(--foreground); }
+
+/* Input */
+.str-chat__textarea__textarea { border-radius: 0.75rem!important; }
+
+/* Channel header override */
+.str-chat__channel-header { backdrop-filter: blur(12px); }
