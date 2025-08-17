@@ -5,6 +5,9 @@ import { useCreateChatClient, Chat, Channel, ChannelHeader, MessageInput, Messag
 
 import 'stream-chat-react/dist/css/v2/index.css';
 
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
 const ChatForum = ({ clerkUser, slug }) => {
     const apiKey = 'pq7a699xvrx2';
@@ -29,11 +32,12 @@ const ChatForum = ({ clerkUser, slug }) => {
 
     const channel = client.channel('messaging', slug, {
       image: 'https://getstream.io/random_png/?name=react',
-      name: slug.toUpperCase() + "Discussion",
+      name: capitalize(slug) + " Discussion",
       members: [userId],
     });
 
     setChannel(channel);
+    // channel.addMembers([userId]);
   }, [client]);
 
   if (!client) return <div>Setting up client & connection...</div>;
